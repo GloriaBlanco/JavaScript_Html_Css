@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        border-radius: 10%;
+        width: 95vw;
+        height: 20vh;
+      }
+    </style>
+    <title>Layout</title>
+  </head>
+  <body
+    style="background: linear-gradient(rgb(231, 224, 224), rgba(255, 0, 0, 0.329)) grey; color: white; font-size: 21px">
+  
+    <!-- todo corpo do site terá cor cinza e texto branco -->
+
+    <!-- 1ª tabela - 1ª linha com Banner e Menu -->
+    <table style="border-bottom: 2px dotted white">
+      <thead>
+        <tr>
+          <!-- imagem Banner -->
+          <th colspan="6">
+            <a href="https://sp.senai.br/unidade/manutencao/" ; target="_blank"><img src="SENAI.png" alt=" Banner " /></a></th>
+          <!-- colspan mescla celulas(horizontal)na quantidade que tem, neste caso sao 6
+          a rowspan mescla (vertical)-->
+        
+        </tr>
+        <tr>
+          <!-- Menu site -->
+          <th style="width: 45%" colspan="2">LOGO</th>
+          <th>Sobre nós</th>
+          <th>Produtos</th>
+          <th>Contato</th>
+        </tr>
+      </thead>
+    </table>
+
+    <br />
+    <!-- 1ª tabela - 2ª linha com texto -->
+    <table>
+      <tbody>
+        <tr>
+          <td style="width: 5%"></td>
+          <!-- 1ª coluna, esta é celula que vai ocupar 10% de espaço/tamanho da celula de 5% do geral -->
+          <td>
+            <p style="text-align: justify">
+              <!-- 2ª coluna é o texto. Aqui o texto ficará justificado, certo em todas as laterais -->
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              aspernatur dolorum quidem quas nesciunt deleniti ullam ipsum ipsa
+              eos debitis. Quibusdam alias ex delectus deserunt, eaque obcaecati
+              totam porro eum.
+            </p>
+          </td>
+          <td style="width: 10%"></td>
+          <!-- 3ª coluna, esta é celula que vai ocupar 10% de espaço/tamanho da celula de 10% do geral -->
+          <td style="width: 10%"></td>
+          <!-- 4ª coluna, esta é celula que vai ocupar 10% de espaço/tamanho da celula de 10% do geral-->
+          <td>
+            <p style="text-align: justify">
+              <!-- 5ª coluna é o texto. Aqui o texto ficará justificado, certo em todas as laterais -->
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+              dolore reiciendis soluta, fugit expedita nisi aut in, explicabo
+              officia sapiente iusto corrupti minima iure id similique maxime
+              totam nesciunt assumenda!
+            </p>
+          </td>
+          <td style="width: 5%"></td>
+          <!-- 6ª coluna, esta é celula que vai ocupar 5% de espaço/tamanho da celula de 10% do geral -->
+        </tr>
+      </tbody>
+    </table>
+
+  
+    <h1 style="text-align: center;"> Programação </h1>
+    <!-- 2ª tabela - 1ª linha com imagens -->
+    <table style="height: 50vh; align-items: center;"> <!-- aumentando o tamanho da tabela, ou seja, aumentando altura tabela, altura das colunas -->
+      <tbody style="height: 50vh;"> <!-- aumentando o tamanho da tabela, ou seja, aumentando altura tabela, altura das colunas -->
+        <!-- tabela 1ª linha com 3 imagens -->
+        <tr>
+          <!-- 1ª coluna -->
+          <td style="width: 5%"></td>
+          <!-- 2ª coluna -->
+          <td> 
+            <a href="https://www.w3schools.com/python/default.asp" ; target="_blank"><img style="width: 100%; border-radius: 40%; border: 3px dotted red;" src="Imagem1.png" alt="cod preto" ></a> </td>
+          <!-- 3ª coluna -->
+          <td style="width: 5%;"></td>
+          <!-- 4ª coluna -->
+          <td style="width: 5%;"></td>
+          <!-- 5ª coluna -->
+          <td>
+            <a href="https://www.w3schools.com/html/default.asp" ; target="_blank"><img style="width: 100%; border-radius: 40%; border: 3px dotted red;" src="Imagem2.png" alt="cod preto/branco"></a> </td>
+          <!-- 6ª coluna -->
+          <td style="width: 5%;"></td>
+          <!-- 7ª coluna -->
+          <td style="width: 5%;"></td>
+          <!-- 8ª coluna -->
+          <td>
+            <a href="https://www.w3schools.com/css/default.asp" ; target="_blank"><img style="width: 100%; border-radius: 40%; border: 3px dotted red;" src="Imagem3.png" alt="cod branco"> </a>
+          </td>
+          <!-- 9ª coluna -->
+          <td style="width: 10%"></td>
+        </tr>
+
+        <!-- 2ª tabela - 2ª linha com legendas -->
+        <tr>
+          <!-- 1ª coluna -->
+          <td style="width: 5%"></td>
+          <!-- 2ª coluna -->
+          <td style="text-align: justify; padding: 2%; vertical-align: 2%; width: 20% ;"> 
+            <h3 style="text-align: center;">Python</h3><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda eos, ullam sint repellendus est blanditiis itaque tperiores officiis nemo libero Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus aliquid fugiat quis nobis sit, suscipit pariatur. Praesentium sit ad ducimus obcaecati expedita soluta, fugiat nihil, maxime iste veritatis assumenda eveniet?del!</p> </td>
+          <!-- 3ª coluna -->
+          <td style="width: 5%"> </td>
+          <!-- 4ª coluna -->
+          <td style="width: 10%"></td>
+          <!-- 5ª coluna -->
+          <td style="text-align: justify; padding: 2%; vertical-align: 2%; width: 20% ;"> <h3 style="text-align: center;">HTML</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aliquid, dolores tenetur quasi inventore facilsintriatur accusamus iusto eius!</p></td>
+          <!-- 6ª coluna -->
+          <td style="width: 5%"></td>
+          <!-- 7ª coluna -->
+          <td style="width: 10%"></td>> </td>
+          <!-- 8ª coluna -->
+          <td style="text-align: center; padding: 2%; vertical-align: 2% ; width: 20%;"> <p> <h3 style="text-align: center;">CSS</h3> Código com fundo branco        </p></td>
+          <!-- 9ª coluna -->
+          <td style="width: 5%"></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>

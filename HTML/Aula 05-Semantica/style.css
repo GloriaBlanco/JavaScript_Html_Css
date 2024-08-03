@@ -1,0 +1,69 @@
+/* zerar navegador, padding, margin */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(140, 224, 216, 0.89);
+  color: rgb(50, 37, 63);
+  /*  margin: 10px;
+  margin-right: 15px;  */
+  text-align: justify;
+}
+
+header {
+  padding: 30px;
+  background-color: rgb(63, 170, 161);
+  }
+
+h1,
+h2,
+h3 {
+  color: red;
+  margin-top: 37px;
+  margin-right: 15px;
+  margin-bottom: 7px;
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: none; /* tira decoracao do texto, tipo traço de baixo do link */
+}
+
+li {
+  list-style-type: none; /* tira pontinhos da lista, remove marcadores da lista */
+}
+
+p {
+  /* eixo vertical, direita horizontal, esquerda */
+  padding: 2% 5% 5% 4%
+  
+}
+
+.fotos > img {
+  width: 25%;
+  padding: 2%;
+  margin: 4%;
+  border: 4px solid black;
+}
+
+/* esta classe nomiei como "redes_sociais" no html e aqui eu selecionei pertence (>) ao img atraves de "> img" */
+.redes_sociais > img {
+  width: 17px;
+}
+
+.redes_sociais {
+  /* margin: eixo vertical(emcima), horizontal, direita, esquerda */
+  margin-left: 77%; /*  OU  margin: 0 0 0 77%   */
+  padding: 37px;
+  text-align: center;
+}
+
+footer {
+  padding: 30px;
+  background-color: rgb(63, 170, 161);
+  text-align: center;
+  
+}
