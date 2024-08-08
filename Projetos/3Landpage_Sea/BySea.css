@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 62.5% tamanho padrao todos navegadores = 10px / se usar  100% do tamanho do navegador */
+}
+
+body {
+width: 100%;
+height: 100%;
+  padding: 5%;
+  /* (30 top e bottom ) 20 (leftt right)  */
+  background: url(Imagens/LogoBySea.jpeg) no-repeat;
+  background-size: cover;
+  margin: auto;
+
+}
+
+main {
+  margin: auto;
+}
+
+header {
+  width: 70rem;
+  height: 19rem;
+  /* 150 pixel = 15rem */
+  display: flex;
+  /* ativa o flexbox */
+  flex-direction: row;
+  justify-content: center;
+  gap: 17rem;
+
+}
+
+h1 {
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  color: rgba(26, 157, 197, 0.979);
+  font-family: fantasy;
+  font-size: 3rem;
+}
+
+.iniciocx1 {
+  width: 25rem;
+  height: 17rem;
+  align-content: center;
+  text-align: center;
+  font-family: cursive;
+  font-size: 2.7rem;
+  /*  2.1rem x 10 = 21 pixels */
+  color: rgba(5, 81, 124, 0.938);
+  border-width: 0.5rem;
+  border-style: solid;
+  border-image: linear-gradient(to top, rgb(22, 130, 173), bisque) 1;
+}
+
+.inicioimgcx {
+  width: 20rem;
+  height: 18rem;
+  border-radius: 4rem;
+}
+
+article {
+  width: 100rem;
+  height: 30rem;
+  /* 150 pixel = 15rem */
+  display: flex;
+  /* ativa o flexbox */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background:linear-gradient( rgb(22, 130, 173), bisque);
+  border-radius: 40rem;
+}
+
+.beachcx2 {
+  width:20rem;
+  height: 15rem;
+  align-content: center;
+  text-align: center;
+  font-family: cursive;
+  font-size: 3.5rem;
+  /*  2.1rem x 10 = 21 pixels */
+  color:rgb(13, 96, 129);
+  border-width: 0.7rem;
+  border-style: solid;
+  border-image: linear-gradient(to top,  rgb(22, 130, 173), bisque) 1;
+  background-color: bisque;
+}
+
+.imgbeachcx1 {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 4rem;
+  border: 0.2rem solid rgb(6, 171, 236);
+  border-radius: 15px 50px 30px;
+  background-color: linear-gradient(to top,  rgb(22, 130, 173), bisque) 1;
+}
+
+.imgbeachcx3 {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 4rem;
+  border: 0.2rem solid rgb(6, 171, 236);
+  border-radius: 15px 50px 30px;
+  background-color: linear-gradient(to top,  rgb(22, 130, 173), bisque) 1;
+}
+
+section {
+  width: 90rem;
+  height: 28rem;
+  /* 150 pixel = 15rem */
+  display: flex;
+  /* ativa o flexbox */
+  flex-direction: row;
+  justify-content: center;
+align-items: center;
+  gap: 5rem;
+
+}
+
+.fitcx2 {
+  width: 20rem;
+  height: 15rem;
+  align-content: center;
+  text-align: center;
+  background: linear-gradient(bisque, rgb(22, 130, 173));
+  font-family: cursive;
+  font-size: 3.5rem;
+  /*  2.1rem x 10 = 21 pixels */
+  color: rgb(4, 76, 104);
+  border-width: 0.5rem;
+  border-style: solid;
+  border-image: linear-gradient(to top,  rgb(22, 130, 173), bisque) 1;
+}
+
+.imgfitcx1 {
+  width: 20rem;
+  height: 18rem;
+  border-radius: 4rem;
+  border: 1rem solid rgb(143, 216, 245);
+  border-radius: 15px 50px 30px;
+  
+}
+
+footer {
+  margin: auto;
+  width: 90rem;
+  height: 17rem;
+  /* 150 pixel = 15rem */
+  display: flex;
+  /* ativa o flexbox */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+aside {
+  width: 30rem;
+  height: 9rem;
+padding: 1rem;
+  float: right;
+  border-radius: 4rem;
+  text-align: center;
+  border: 0.2rem solid rgb(6, 171, 236);
+  border-radius: 15px 50px 30px;
+  background-color: linear-gradient(to top,  rgb(22, 130, 173), bisque) 1;
+}
+
+
+ul {
+  padding: 1rem;
+  text-align: center;
+  width: 30rem;
+  height: 9rem;
+  float: right;
+  font-size: 5rem;
+  list-style-type: none;
+  border-radius: 4rem;
+  border: 0.2rem solid rgb(6, 171, 236);
+  border-radius: 15px 50px 30px;
+  background-color: linear-gradient(to top, rgb(22, 130, 173), bisque) 1;
+}
+
+
+
+.menu>ul>li:hover {
+  /* transições ponteiro do mouse muda de cor maozinha */
+  color: rgb(75, 10, 160);
+  cursor: point;
+  background: white;
+  transition: 1s;
+  border-bottom: 5px solid rgb(91, 9, 223);
+}
