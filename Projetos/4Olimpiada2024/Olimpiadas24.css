@@ -1,0 +1,573 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 62.5% tamanho padrao todos navegadores = 10px / se usar  100% do tamanho do navegador */
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* 
+main {
+    /* background: linear-gradient(0.25turn, rgb(128, 11, 236), black);  
+  background: linear-gradient(white, rgb(19, 15, 224),red);
+   padding: 1rem 20rem;
+}
+ */
+
+
+.imglogo {
+  position: fixed;
+  padding: 9rem 0rem 9rem 10rem;
+  width: 14%;
+}
+
+.imgtorre {
+  display: flex;
+  margin: auto;
+  width: 38%;
+}
+
+.cabecalho {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  margin: auto;
+  width: 100%;
+  font-size: 4rem;
+  /* position: fixed; 
+  margin-top: 13.5rem;  */
+  background: rgb(8, 8, 143);
+}
+
+.cabecalho>li>a {
+  color: white;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.menu>ul>li:hover {
+  /* transições ponteiro do mouse muda de cor maozinha */
+  cursor: point;
+  background: linear-gradient(0.25turn, blue, rgba(87, 122, 240, 0.959));
+  transition: 1s;
+  border-bottom: 5px solid rgb(8, 91, 245);
+}
+
+/*   background-color: linear-gradient(to left, white 50%, red, rgb(19, 15, 224));
+ */
+
+.aneis1 {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(white, rgba(39, 69, 238, 0.795));
+}
+
+.azul {
+  border-radius: 100%;
+  border: 1rem solid blue;
+  width: 20rem;
+  height: 20rem;
+  font-size: 1.9rem;
+  align-content: center;
+  text-align: center;
+}
+
+.preto {
+  border-radius: 100%;
+  border: 1rem solid black;
+  width: 20rem;
+  height: 20rem;
+  font-size: 1.9rem;
+  align-content: center;
+  text-align: center;
+}
+
+.vermelho {
+  border-radius: 100%;
+  border: 1rem solid red;
+  width: 20rem;
+  height: 20rem;
+  font-size: 1.9rem;
+  align-content: center;
+  text-align: center;
+}
+
+.aneis2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(39, 69, 238, 0.795), white);
+}
+
+
+.amarelo {
+  border-radius: 100%;
+  border: 1rem solid yellow;
+  width: 20rem;
+  height: 20rem;
+  font-size: 1.9rem;
+  align-content: center;
+  text-align: center;
+}
+
+.verde {
+  border-radius: 100%;
+  border: 1rem solid green;
+  width: 20rem;
+  height: 20rem;
+  font-size: 1.9rem;
+  align-content: center;
+  text-align: center;
+}
+
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.historia>h3 {
+  padding: 0.5rem;
+  font-size: 3rem;
+  color: black;
+}
+
+.historia>p {
+  padding: 0.5rem;
+  line-height: 1.7em;
+  font-size: 1.7rem;
+  text-align: justify;
+  color: black;
+}
+
+.abertura {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+
+}
+
+.cxabertura>h3 {
+  padding: 0 0 1rem;
+  font-size: 3rem;
+  color: black;
+}
+
+.cxabertura>div>p {
+  width: 55%;
+  margin: auto;
+  padding: 0.5rem 0 3rem;
+  line-height: 1.7em;
+  font-size: 1.7rem;
+  text-align: center;
+  color: black;
+
+}
+
+.imgabertura {
+  width: 50%;
+  margin: auto;
+}
+
+
+.paris {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+article>h3 {
+  font-size: 3rem;
+  color: black;
+}
+
+.imgparis {
+  width: 25%;
+}
+
+
+.cxparis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.cxparis>p {
+  padding: 0.5rem;
+  line-height: 1.7em;
+  font-size: 1.7rem;
+  text-align: justify;
+  color: black;
+}
+
+.mascotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.imgmascote {
+  display: flex;
+  width: 40%;
+}
+
+.cxmascotes {
+  display: flex;
+  flex-direction: column;
+}
+
+.mascotes>h3 {
+  padding: 2rem;
+  font-size: 3rem;
+  color: black;
+}
+
+.cxmascotes>p {
+  padding: 0.5rem;
+  line-height: 1.7em;
+  font-size: 1.7rem;
+  text-align: center;
+  color: black;
+}
+
+.recordes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.recordes>h3 {
+  padding: 0.5rem;
+  font-size: 3rem;
+  color: black;
+}
+
+.recordes>p {
+  padding: 0.5rem;
+  line-height: 1.7em;
+  font-size: 1.7rem;
+  text-align: justify;
+  color: black;
+}
+
+.medalhas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+}
+
+article>h3 {
+  text-align: center;
+  padding: 5rem;
+  font-size: 3rem;
+  color: black;
+}
+
+div>p {
+  color: black;
+  line-height: 1.7em;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.ouro {
+  border-radius: 100%;
+  border: 1rem solid #e0bf01;
+  width: 20rem;
+  height: 20rem;
+  align-content: center;
+  background: #a18f2962;
+
+}
+
+.prata {
+  border-radius: 100%;
+  border: 1rem solid #c0c0c0;
+  width: 20rem;
+  height: 20rem;
+  align-content: center;
+  background: #c0c0c081;
+}
+
+.bronze {
+  border-radius: 100%;
+  border: 1rem solid #cd7f32;
+  width: 20rem;
+  height: 20rem;
+  align-content: center;
+  background-color: #d3c1ae;
+}
+
+
+.curiosidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.curiosidades>h3 {
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 3rem;
+  color: black;
+}
+
+.curiosidades>p {
+  padding: 0.5rem;
+  line-height: 1.7em;
+  font-size: 1.7rem;
+  text-align: justify;
+  color: black;
+}
+
+.referencias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.referencias>h3 {
+  padding: 0.5rem;
+  font-size: 3rem;
+  color: black;
+  border: 1rem solid blue;
+}
+
+.referencias>a {
+  padding: 0.5rem;
+  line-height: 1.7em;
+  font-size: 1.7rem;
+  text-align: justify;
+  color: black;
+}
+
+footer {
+  height: 20%;
+  position: relative;
+  color: white;
+  background-color: rgb(3, 3, 95);
+  text-align: center;
+}
+
+.redes_sociais {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(3, 3, 95);
+}
+
+.redes_sociais>img {
+  width: 2%;
+  padding: 2rem 0;
+}
+
+ul>li {
+  line-height: 1.7em;
+  font-size: 1.7rem;
+  text-align: center;
+  list-style-type: none;
+}
+
+a {
+  color: white
+}
+
+nav>p {
+  color: white;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/* 
+.logo {
+  width: 2rem;
+  position: fixed;
+  margin-left: 1;
+ 
+} 
+ */
+/* 
+
+ <a href="https://pt.wikipedia.org/wiki/Jogos_Ol%C3%ADmpicos">Wikipedia</a>
+                <a href="https://brasilescola.uol.com.br/educacao-fisica/olimpiadas.htm"> Brasil Escola</a>
+  Pesquisa
+  margin: 5rem 3rem 3rem 5rem;
+ background: linear-gradient(to left, white 50%, rgba(0, 0, 255, 0.562));
+background: linear-gradient(to left, white 50%, red, rgb(19, 15, 224));
+  ######################
+
+INICIAL 
+FOTO
+DATA 19 DIAS DE 26/JULHO ATÉ
+MEDALHAS
+LOCAL pARIS
+3ª VEZ -  1900 e 1924 E 2024
+aBERTURA = 26 de julho de 2024 será realizada ao longo do rio Sena, no coração de Paris
+MASCOTE - A Phryge Olímpica tem o formato de um barrete (gorro) frígio. Como a visão de Paris 2024 é demonstrar que o esporte pode mudar vidas, as mascotes terão um papel muito importante em liderar uma revolução através do esporte.
+Beisebol, softbol, karatê, skate, escalada e surfe fizeram parte do cronograma do principal evento esportivo do mundo. Para Paris 2024, três deles vão se manter e outros dois serão incluídos.
+7 VALORES OLIMPICOS atribuídos por Coubertin: igualdade, equidade, justiça, respeito pelas pessoas, racionalidade, compreensão, autonomia e excelência.
+Os 5 aros REPESENTAM um continente: azul, a Europa; amarelo, a Ásia; preto, a África; verde, a Oceania; e vermelho, as Américas. 
+
+#####################
+HISTORIA
+https://pt.wikipedia.org/wiki/Jogos_Ol%C3%ADmpicos
+Jogos Olímpicos são um evento multiesportivo global com modalidades de verão e de inverno, em que milhares de atletas participam de várias competições. Atualmente os Jogos são realizados a cada dois anos, em anos pares, com os Jogos Olímpicos de Verão e de Inverno se alternando, embora ocorram a cada quatro anos no âmbito dos respectivos Jogos sazonais
+Originalmente, os Jogos Olímpicos da Antiguidade foram realizados em Olímpia, na Grécia, do século VIII a.C. ao século V d.C..
+No século XIX, o Barão Pierre de Coubertin fundou o Comitê Olímpico Internacional (COI) em 1894. O COI se tornou o órgão dirigente do Movimento Olímpico, cuja estrutura e as ações são definidas pela Carta Olímpica.
+A celebração dos Jogos abrange muitos rituais e símbolos, como a tocha e a bandeira olímpica, bem como as cerimônias de abertura e encerramento. Existem mais de 13 000 atletas que competem nos Jogos Olímpicos de Verão e Inverno, em 33 diferentes modalidades esportivas com cerca de 400 eventos. Os finalistas do primeiro, segundo e terceiro lugar de cada evento recebem medalhas olímpicas de ouro, prata e bronze, respectivamente.
+
+https://brasilescola.uol.com.br/educacao-fisica/olimpiadas.htm
+
+"As Olimpíadas surgiram na Grécia Antiga, por volta de 776 a. C., na cidade de Olímpia.
+
+Os Jogos Olímpicos da Antiguidade estavam associados a rituais religiosos e prestavam homenagens a deuses gregos, como Zeus.
+
+Após o fim das Olimpíadas antigas, em 393 d.C., os jogos voltariam a ocorrer somente 1503 anos depois.
+
+O francês Barão de Coubertin iniciou as Olimpíadas modernas, no ano de 1896.
+
+As Paralimpíadas são as competições olímpicas disputadas por pessoas com algum tipo de deficiência.
+
+Os Jogos Olímpicos são divididos em duas edições, uma de verão e a outra de inverno, que ocorrem em um intervalo de dois anos."
+
+Veja mais sobre "Olimpíadas (Jogos Olímpicos)" em: https://brasilescola.uol.com.br/educacao-fisica/olimpiadas.htm
+
+################################
+MASCOTES - IMAGENS
+https://olympics.com/pt/olympic-games/olympic-mascots
+
+##############################
+RECORDS
+1	Phelps, Michael Michael Phelps	 Estados Unidos	Natação	2004-2016	Verão	
+M	23ouro	3	2	28total
+
+2	Latynina, Larissa Larissa Latynina	 União Soviética	Ginástica artística	1956-1964	Verão	
+F	9ouro	5	4	18total
+Os 5 atletas com mais medalhas acumuladas
+1º Michael Phelps (EUA) 28 medalhas. NATAÇÃO. 23ouro. ...
+2º Larissa Latynina (URS) 18 medalhas. GINÁSTICA ARTÍSTICA. 9ouro. ...
+3º Nikolai Andrianov (URS) 15 medalhas. GINÁSTICA ARTÍSTICA. ...
+4º Boris Shakhlin (URS) 13 medalhas. GINÁSTICA ARTÍSTICA. ...
+5º Edoardo Mangiarotti (ITA) 13 medalhas. ESGRIMA.
+
+
+##########################
+CURIOSIDADES
+"Quais são os símbolos olímpicos?
+Os símbolos olímpicos são: os aros, a tocha olímpica e o mascote."
+
+Veja mais sobre "Olimpíadas (Jogos Olímpicos)" em: https://brasilescola.uol.com.br/educacao-fisica/olimpiadas.htm
+
+https://brasilescola.uol.com.br/educacao-fisica/olimpiadas.htm
+
+Mais vitórias consecutivas numa mesma modalidade	Aladár Gerevich	 Hungria		6 vitórias consecutivas - em 1932, 1936, 1948, 1952, 1956, 1960	[
+
+Mais participações em Olimpíadas	Ian Millar	 Canadá		10 olimpíadas
+
+Atleta mais velho a ganhar uma medalha olímpica	Oscar Swahn	 Suécia	Antuérpia 1920	72 anos e 280 dias - Modalidade: Tiro duplo ao veado	[1]
+
+Atleta mais jovem a ganhar uma medalha	Henry Clundey	 Reino Unido	Prata nos Estocolmo 1912	10 anos e 78 dias - Modalidade: remo	[8]
+
+Atleta com o "pior" tempo da história numa maratona olímpica	Shizo Kanakuri	 Japão	1912-1966	54 anos, 8 meses, 6 dias, 8:32:20.3 horas	[11]
+
+"Curiosidades sobre as Olimpíadas
+Londres sediou em 1908 a Olimpíada mais longa da história. Os jogos aconteceram entre 27 de abril e 31 de outubro.
+
+Entre os anos de 1924 e 1992, as edições de verão e de inverno eram realizadas no mesmo ano.
+
+Em 1920 foi hasteada a bandeira olímpica, pela primeira vez, na cidade de Antuérpia, na Bélgica.
+
+Maria Lenk foi a primeira mulher brasileira a competir em uma Olimpíada, no ano de de 1932, na cidade estadunidense de Los Angeles.
+
+Entre os anos de 1912 e 1948, arquitetos, escultores, pintores, músicos e escritores competiram enquanto artistas olímpicos.
+
+As línguas inglesa e francesa são as oficiais das Olimpíadas. Elas são complementadas pela língua da cidade-sede dos jogos.
+
+A primeira vez que o evento foi transmitido via satélite pela televisão foi nos jogos de Roma, em 1960. Na ocasião, mais de 200 milhões de pessoas assistiram às competições em 18 países europeus.
+
+Somente em 2012, todos os países participantes dos jogos enviaram atletas mulheres.
+
+O nadador dos Estados Unidos Michael Phelps é o atleta que conquistou mais medalhas olímpicas da história: 28 no total."
+
+Veja mais sobre "Olimpíadas (Jogos Olímpicos)" em: https://brasilescola.uol.com.br/educacao-fisica/olimpiadas.htm
+
+https://www.cob.org.br/pt/cob/time-brasil/brasil-nos-jogos/curiosidades-olimpicas
+
+- Total de 150 medalhas conquistadas: 37 de ouro, 42 de prata e 71 de bronze
+
+Ao longo de 23 edições de Jogos Olímpicos de Verão, o Brasil conquistou um total de 150 medalhas, sendo 37 de ouro, 42 de prata e 71 de bronze.- 
+Modalidades com mais medalhas: judô (24), vela (19), atletismo (19), natação (15), vôlei de praia (13) e vôlei (11).
+
+- Recorde de medalhas de ouro: Rio 2016 (7) e Tóquio 2020 (7).
+
+- Recorde no total de medalhas: Tóquio 2020 (21, sendo 7 de ouro, 6 de prata e 8 de bronze).
+
+- Número de finais disputadas: Sydney 2000 (22), Atenas 2004 (30) e Pequim 2008 (41), Londres 2012 (36) e Rio 2016 (71)
+
+- Recorde no número de atletas: Rio 2016 (465 atletas)
+
+- Recorde no número de atletas femininas: Rio 2016 (209)
+
+- Recorde no número de modalidades: Rio 2016 (41)
+
+- Bicampeões olímpicos (15): Adhemar Ferreira da Silva (atletismo), Martine Grael, Kahena Kunze, Robert Scheidt, Torben Grael e Marcelo Ferreira (vela), Giovane, Maurício, Serginho, Fabi, Fabiana, Sheila, Paula, Thaisa e Jaqueline (vôlei)
+
+- Tricampeão olímpico: José Roberto Guimarães (vôlei)
+
+- Atleta masculino com maior número de participações olímpicas (7): Robert Scheidt (vela -96, 00, 04, 08, 12, 16 e 20) e Rodrigo Pessoa (hipismo - 92, 96, 00, 04, 08, 12 e 20).
+
+- Atleta feminina com maior número de participações olímpicas (7): Formiga (futebol – 96, 00, 04, 08, 12, 16 e 20)
+
+- Maior atleta medalhista: Robert Scheidt (5 medalhas – 2 de ouro, 2 pratas e 1 de bronze) e Torben Grael (5 medalhas - 2 de ouro, uma de prata e 2 de bronze)
+
+- Primeira medalha de ouro feminina: Jackie Silva e Sandra Pires (vôlei de praia) - Atlanta-96
+
+- Primeira medalha individual feminina: Ketleyn Quadros (judô) – bronze em Pequim 2008
+
+- Primeira medalha de ouro individual feminina: Maurren Maggi (atletismo) – Pequim 2008
+
+- Total de atletas brasileiros medalhistas na história olímpica: 371
+
+sendo o azul: Europa, amarelo: Ásia, preto: África, verde: Oceania e vermelho: as Américas. 
+##############################
+
+A Torre Eiffel, o Museu do Louvre, o Palácio de Versalhes, a Catedral de Notre-Dame de Paris, a Ópera Garnier e o Jardim de Luxemburgo são apenas o início do roteiro para uma viagem incrível a Paris. Não falta o que fazer na capital da França e você sempre terá a sensação de que precisa voltar.
+
+*/
