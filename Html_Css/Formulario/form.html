@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="" methodo="post" autocomplete="on">
+      <h1>Faça o seu login</h1>
+      <!-- possíveis valores para o atributo type: button, checkbox, date, color, email, file, tel, number, password, radio (bolinha), search, text, image -->
+      <!-- onclick é Java script: quando clicar botao aparecça um alerta -->
+      <input type="button" value="Clique aqui" onclick="msg()" />
+      <input type="text" name="nome" placeholder="Nome" /> <br />
+      <input type="checkbox" name="veiculo1" value="Bicicleta" /> Eu tenho uma
+      bicicleta <br />
+      <input type="checkbox" name="veiculo2" value="Carro" /> Eu tenho um carro
+      <br />
+      <input type="checkbox" name="veiculo3" value="Moto" /> Eu tenho uma moto
+      <br />
+    </form>
+    <script>
+      function msg() {
+        alert("Você clicou no botão");
+      }
+    </script>
+
+    <form action="">
+      <label for="cor"> Selecione sua cor preferida </label>
+      <input type="color" name="favcor" id="cor" />
+    </form>
+  </body>
+</html>

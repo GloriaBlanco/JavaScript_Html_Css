@@ -1,0 +1,75 @@
+/* unidade de medida / torna pagina acessivel */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; /* 62.5% tamanho padrao todos navegadores = 10px / se usar  100% do tamanho do navegador */
+}
+
+
+article {
+  padding: 1rem 1.5rem;
+  background: linear-gradient(0.25turn, rgba(198, 150, 223, 0.815), bisque);
+}
+
+header {
+    height: 150rem;
+    width: 17rem;
+    position: fixed;
+    background-color: bisque;
+    
+  }
+
+.menu > ul > li:hover { /* transições ponteiro do mouse muda de cor maozinha */
+    color: white;
+    cursor: point;
+    background:  linear-gradient(0.25turn, rgba(198, 150, 223, 0.815), bisque);  transition: 1s;
+    border-bottom: 5px solid rgb(173, 9, 223);
+}
+.menu > ul > li {
+    font-size: 2.5rem;
+    display: block;
+    color: white;
+        padding: 4rem 1rem 2rem 2rem; /* posiçao blocos menu */
+    list-style-type: none;
+    margin: 1.7rem;
+}
+
+  main {
+
+    position: absolute;
+    top: 0;
+    left: 17rem;
+    right: 3rem;
+  }
+
+h1 {
+  color: blueviolet;
+  margin: 3rem 0 2rem 0;
+  font-size: 9em; /* em porque é container /multiplicacao , aqui é 1 vez o tamanho do container */
+
+}
+
+h2 {
+  color: blueviolet;
+  margin: 3rem 0 2rem 0;
+  font-size: 2.5rem; /* rem porque é na pagina /multiplicacao , aqui é 1 vez o tamanho do container */
+  text-align: center;
+  border: 3px solid black;
+}
+h3 {
+  color: blueviolet;
+  font-size: 4.5rem; /* rem porque é na pagina /multiplicacao , aqui é 1 vez o tamanho do container */
+  margin: 3rem 0 2rem 0;
+}
+h4 {
+    font-size: 4.5em; 
+  color: blueviolet;
+  margin: 3rem 0 2rem 0;
+}
+
+p {
+  font-size: 2.3rem; /* multiplicacao , aqui é 1 vez o tamanho do container */
+  text-align: justify;
+  padding: 0 0 2rem;
+}

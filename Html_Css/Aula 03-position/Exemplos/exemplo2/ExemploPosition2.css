@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.fotografia {
+  position: relative;
+  width: 320px;
+  height: 150px;
+  background-color: rgb(103, 241, 241);
+}
+
+.fotografia > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.article {
+  /* relativo */
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 20%;
+  position: absolute;
+}
+.dois {
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.tres {
+  right: 0;
+}
+
+.texto1 {
+  position: relative;
+}
+
+.col {
+  /* conteiner relativo e elementos absoluto */
+  position: absolute;
+  top: 200px;
+}
+
+.dir {
+  padding: 0 3% 0 55%;
+}
+
+.esq {
+  padding: 0 55% 0 3%;
+}
+
+.texto2 {
+  position: relative;
+}
+
+.paragrafo {
+  position: absolute;
+  top: 400px;
+  width: 65%;
+}
+
+.foto {
+  position: absolute;
+  top: 400px;
+  right: 3%;
+  width: 25%;
+}
