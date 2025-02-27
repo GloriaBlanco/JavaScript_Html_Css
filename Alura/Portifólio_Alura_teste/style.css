@@ -1,0 +1,16 @@
+body {
+    background-color:black;
+    color: green;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+h1{
+    font-weight: bold;
+}
+
+span{
+    color: #22D4FD;
+    border: 1px solid #22D4FD;
+    padding: 10px;
+}
