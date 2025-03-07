@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:4vh;
+    height: 300px;
+    border: #F6F6F6 1px solid;  
+}
+

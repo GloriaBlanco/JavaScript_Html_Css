@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box; --- apliquei no body, mas poderia ser aqui */
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.container {
+    display: flex; /* or inline-flex */
+    flex-direction: row; /* Define a direção dos elementos um ao lado do outro, horizontal*/
+    align-items: center; /* Alinha os elementos, principalmente imagem centro de cima pra baixo, verticalmente */
+    justify-content: space-between; /* Distribui os elementos ao longo do eixo principal */
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha */
+}
+
+.texto-container {
+    flex: 1; /* Permite que o texto ocupe o espaço disponível */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.titulo {
+    font-size: 4vh;
+    text-align: center; /* Alinha o título à esquerda */
+    padding: 4vh;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.texto {
+    font-size:4vh;
+    display: flex; /* or inline-flex */
+    flex-direction: column;
+    border: #F6F6F6 1px solid;
+    padding: 11vh;
+    align-items: center;
+    text-align: justify
+}
+
+
+.linksss {
+    display: flex;
+    gap: 20px; /* Adiciona espaçamento entre os links */
+}
+
+.links a {
+    color: #22D4FD;
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.imagem {
+    display: flex; /* or inline-flex */
+    border: #F6F6F6 1px solid;
+    padding: 4vh;
+    height: auto;
+}
+
+
+
+
