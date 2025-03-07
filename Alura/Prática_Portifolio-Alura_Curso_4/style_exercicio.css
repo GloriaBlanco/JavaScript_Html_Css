@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.titulo-destaque{
+    color: #22D4FD;
+}
+
+.apresentacao {
+    margin: 10%;
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px; /* numero esta no figma */
+   
+}
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* todas as cores, tamanhos estão no figma*/
+.apresentacao__links__botao{
+    background-color: #22D4FD;
+    width: 280px; 
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 21.5px 0;  /* 1ºverticalpx 2ºhorizontalpx, margem de cima e de baixo */
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600 ;  /* ir no google fonts e pegar o peso da fonte */
+}
+
+.apresentacao__links a{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+
+}

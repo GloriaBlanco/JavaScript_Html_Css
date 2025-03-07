@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #554d4d;
+    color: #F6F6F6;
+}
+
+
+main {
+    display: flex; /* or inline-flex */
+    justify-content: space-between;
+}
