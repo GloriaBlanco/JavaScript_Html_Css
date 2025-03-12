@@ -1,7 +1,8 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
+
 let AmigosIncluidos = [];
+
 let nomesSorteados = [];
-let j = 0;
 
 function adicionarAmigo() { // este nome da função está no arquiv input  no html
     // pega o nome do amigo digitado no input no html
@@ -32,7 +33,6 @@ function adicionarAmigo() { // este nome da função está no arquiv input  no h
 
 // função para mostrar os nomes digitados na lista na tela para o usuário 
 function atualizarListaAmigos() {
-    j = AmigosIncluidos.length;
     let listaAmigos = document.getElementById("listaAmigos");
     listaAmigos.innerHTML = "";
     for (let i = 0; i < AmigosIncluidos.length; i++){         
@@ -42,10 +42,9 @@ function atualizarListaAmigos() {
     }
 }
 
-
 // esta funcao sorteia um amigo para o usuario, e mostra na tela
 function sortearAmigo() { // este nome da funçaõ é o mesmo que esta no botão no html
-    if (AmigosIncluidos.length < 2 && j < 2) {
+    if (AmigosIncluidos.length < 2) {
         alert('Por favor, adicione pelo menos dois amigos para sortear.');
         return;
     }
@@ -55,31 +54,23 @@ function sortearAmigo() { // este nome da funçaõ é o mesmo que esta no botão
     resultado.innerHTML = `O amigo sorteado foi ${amigoSorteado}`;
     // Adiciona o amigo sorteado à lista de nomes sorteados
     nomesSorteados.push(amigoSorteado);
-
     // excluir o  nome sorteado da lista de AmigosIncluidos
     AmigosIncluidos.splice(AmigosIncluidos.indexOf(amigoSorteado), 1);
-
-    if (nomesSorteados.length === j-1) {
-        alert(`Acabou sorteio, sobrou o nome ${AmigosIncluidos[0]}. Por favor, começe novamente. `);
-        return;
-    }
     // atualiza a lista de amigos    console.log(AmigosIncluidos);
     console.log(nomesSorteados);
+    console.log(AmigosIncluidos);
     atualizarListaAmigosSorteados();
 }
 
-
+// função para mostrar os nomes sorteados na lista na tela para o usuário
 function atualizarListaAmigosSorteados() {
-    let listasorteados= document.getElementById("Sorteados");
-    listasorteados.innerHTML = "";
-    for (let i = 0; i < nomesSorteados.length; i++){
-        console.log(j);      
+    let Sorteados= document.getElementById("Sorteados");
+    Sorteados.innerHTML = "";
+    for (let i = 0; i < nomesSorteados.length; i++){   
        let elementoSorteado = document.createElement("li");
        elementoSorteado.textContent = nomesSorteados[i];
-       listasorteados.appendChild(elementoSorteado);
+       Sorteados.appendChild(elementoSorteado);
     }
     console.log(nomesSorteados);
-    console.log(j)
 }
-
 
